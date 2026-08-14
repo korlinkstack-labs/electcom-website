@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Electcom - Electrical Company </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <!-- Replaced template padding classes with custom 'navbar-brand-logo' class -->
+        <a href="index.html" class="navbar-brand bg-primary navbar-brand-logo">
+            <img src="img/logo.png" alt="Electcom Automation Logo" class="img-fluid navbar-logo-img">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="store.html" class="nav-item nav-link active">Store</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Company</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                    </div>
+                </div>
+            </div>
+            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+234 806 050 5816</h4>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="hero-store d-flex align-items-center text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+    <span class="feature-pill mb-3"><i class="fas fa-store"></i> Electcom Store</span>
+    <h1 class="display-4 fw-bold mb-3 text-white">Industrial Products, Smart Home Devices & Training Courses</h1>
+    <p class="fs-5 mb-4" style="max-width: 720px;">Browse selected products for industrial control panels, smart home automation, tools, and technical courses. Use the button below to view every product in the full Selar store.</p>
+    
+    <!-- Updated Button Container -->
+    <div class="d-flex flex-wrap gap-3">
+        <!-- Replaced btn-lg and rounded-pill with responsive padding, removed icon -->
+        <!-- <a href="https://selar.com/m/abasiofiok-okpok1" target="_blank" class="btn btn-primary py-md-3 px-md-5">
+            All Products
+        </a> -->
+        <!-- Changed from btn-outline-light to btn-secondary, adjusted padding -->
+        <a href="#products" class="btn btn-secondary py-md-3 px-md-5">
+            Explore Store
+        </a>
+    </div>
+</div>
+
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg">
+                        <h4 class="mb-3 text-primary fw-bold">Store Highlights</h4>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-success fa-lg me-3 mt-1"></i>
+                            <div>
+                                <strong>Industrial components</strong>
+                                <div class="small text-muted">Contactors, relays, breakers, enclosures, and control accessories.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-success fa-lg me-3 mt-1"></i>
+                            <div>
+                                <strong>Smart home products</strong>
+                                <div class="small text-muted">Locks, smart switches, sockets, motion detectors, and voice assistants.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-success fa-lg me-3 mt-1"></i>
+                            <div>
+                                <strong>Training Courses</strong>
+                                <div class="small text-muted">Advanced PLC programming, automation blueprints, and industrial design classes.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Categories Start -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-title mb-2">Shop by Category</div>
+                <h2 class="fw-bold mb-3">Everything You Need in One Place</h2>
+                <p class="text-muted mx-auto" style="max-width: 760px;">Select a category below to browse our available components, systems, and practical training courses.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-box p-4 p-lg-5">
+                        <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                        <h4>Industrial Components</h4>
+                        <p class="text-muted mb-3">Control panel parts and electrical automation accessories.</p>
+                        <a href="#industrial" class="btn btn-outline-primary rounded-pill">View Industrial</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-box p-4 p-lg-5">
+                        <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                        <h4>Smart Home Products</h4>
+                        <p class="text-muted mb-3">Modern devices for home automation and convenience.</p>
+                        <a href="#smarthome" class="btn btn-outline-primary rounded-pill">View Smart Home</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-box p-4 p-lg-5">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h4>Training & Tools</h4>
+                        <p class="text-muted mb-3">Courses and practical items for hands-on learning.</p>
+                        <a href="#courses" class="btn btn-outline-primary rounded-pill">View Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories End -->
+
+    <!-- Industrial Products Start -->
+<section id="products" class="section-pad bg-light">
+    <div class="container">
+        <!-- Main header removed, keeping only the action button row -->
+        <div class="d-flex justify-content-end mb-4">
+            <a href="https://selar.com/m/abasiofiok-okpok1" target="_blank" class="btn btn-primary rounded-pill px-4 py-3 sticky-cta">
+                <i class="fas fa-shopping-cart me-2"></i>Selar Store
+            </a>
+        </div>
+        
+        <div class="row g-4" id="industrial">
+            <!-- Product 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/32A-contactor.jpeg" class="store-image w-100 h-100" alt="32A Contactors" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">32A AC Contactor (3-Pole, 220V/230V) </h5>
+                            <p class="text-muted mb-4 small">For motor control and power switching.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/845tm5c466" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/overload-relay.jpeg" class="store-image w-100 h-100" alt="Overload Relays" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Overload Relays (2 pcs)</h5>
+                            <p class="text-muted mb-4 small">Protect motors from current overload.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/7d66t74i78" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/three-pole-MCB-breaker.jpeg" class="store-image w-100 h-100" alt="MCB Breakers" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">3-Pole MCBs</h5>
+                            <p class="text-muted mb-4 small">Circuit protection for panels and loads.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/4oc787k887" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/push-button-switches.jpeg" class="store-image w-100 h-100" alt="Push Button Switches" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Push Buttons & Indicators</h5>
+                            <p class="text-muted mb-4 small">Start, stop, and status indicator units.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/mk7177461y" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/Timer relay.jpeg" class="store-image w-100 h-100" alt="Timer Relay" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Timer Relay with Base</h5>
+                            <p class="text-muted mb-4 small">Time-based control for panel logic.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/3z79i2642k" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/plug-in-relay-with-base.jpeg" class="store-image w-100 h-100" alt="Plug-in Relays" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Plug-in Relays with Base</h5>
+                            <p class="text-muted mb-4 small">Reliable switching for control circuits.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/768zg71116" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/auxiliary-contact.jpeg" class="store-image w-100 h-100" alt="Auxiliary Contacts" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Auxiliary Contacts</h5>
+                            <p class="text-muted mb-4 small">Extra switching contacts for panels.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/nu9w5044c0" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Industrial</span>
+                        <img src="img/industrial-control-enclosure.jpeg" class="store-image w-100 h-100" alt="Industrial Components" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Industrial Control Enclosures</h5>
+                            <p class="text-muted mb-4 small">Heavy-duty automation and terminal assemblies.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/715u8o4668" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Industrial Products End -->
+
+
+<!-- Smart Home Products Start -->
+<section id="smarthome" class="section-pad bg-white">
+    <div class="container">
+        
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/smart-door-lock.jpeg" class="store-image w-100 h-100" alt="Smart Door Locks" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Smart Door Locks</h5>
+                            <p class="text-muted mb-4 small">Secure keyless entry for homes and offices.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/i9791a47k3" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/alexa-echo-dot.jpeg" class="store-image w-100 h-100" alt="Alexa Echo Dot" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Alexa Echo Dot / Show</h5>
+                            <p class="text-muted mb-4 small">Voice assistant for smart control and media.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/9977647074" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/smart-switches.jpeg" class="store-image w-100 h-100" alt="Smart Switches" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Smart Switches</h5>
+                            <p class="text-muted mb-4 small">Remote lighting control from phone or app.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/2p3jp77400" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/smart-socket.jpeg" class="store-image w-100 h-100" alt="Smart Socket" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Smart Socket</h5>
+                            <p class="text-muted mb-4 small">Turn appliances on and off remotely.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/o2y6pi886w" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/smart-breaker.jpeg" class="store-image w-100 h-100" alt="Smart Breaker" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Smart Breaker</h5>
+                            <p class="text-muted mb-4 small">Advanced protection and monitoring for loads.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/8b1ho600z7" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/smart-motion-detector.jpeg" class="store-image w-100 h-100" alt="Smart Motion Detector" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Smart Motion Detector</h5>
+                            <p class="text-muted mb-4 small">Advanced protection and monitoring for your home.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/6j0666mp8c" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Product 7 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/solar-panel.jpeg" class="store-image w-100 h-100" alt="550w Mono Panel" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">550w mono panel</h5>
+                            <p class="text-muted mb-4 small">High-efficiency solar panel for residential use.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/d4184864aq" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/6kva-inverter.jpeg" class="store-image w-100 h-100" alt="6Kva Inverter" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">6Kva Inverter</h5>
+                            <p class="text-muted mb-4 small">Reliable power backup for your home or office.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/04be4ln888" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Smart Home</span>
+                        <img src="img/5kwh battery cworth.jpeg" class="store-image w-100 h-100" alt="Smart Socket" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">5kwh Battery Cworth</h5>
+                            <p class="text-muted mb-4 small">Reliable power backup for your home or office.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/50x75e31m8" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Smart Home Products Start Ends -->
+
+
+
+<!-- Courses Start -->
+<section id="courses" class="section-pad bg-light">
+    <div class="container">
+        
+        <div class="row g-4">
+            <!-- Course 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/smarthome (1).png" class="store-image w-100 h-100" alt="Smart Home Automation" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Smart Home Automation</h5>
+                            <p class="text-muted mb-4 small">Learn setup, control, and installation of smart devices.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/381th3ej84" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/automation (2).png" class="store-image w-100 h-100" alt="Industrial Control Panels Design" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Industrial Control Panels Design</h5>
+                            <p class="text-muted mb-4 small">Practical training on panel layout, wiring, and control logic.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/38p41e11r5" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/automation.png" class="store-image w-100 h-100" alt="Digital Electronics Programming" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Digital Electronics Programming</h5>
+                            <p class="text-muted mb-4 small">Understand programming logic for digital systems.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/7764yb1988" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/cctv.png" class="store-image w-100 h-100" alt="CCTV Installations" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">CCTV Installations</h5>
+                            <p class="text-muted mb-4 small">Learn camera selection, wiring, and installation techniques.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/c9z018c141" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/electrical-installation.png" class="store-image w-100 h-100" alt="Electrical Installations" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Electrical Installations</h5>
+                            <p class="text-muted mb-4 small">Core electrical wiring, safety, and practical field work.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/9b968s8yi9" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/about.jpg" class="store-image w-100 h-100" alt="AutoCAD Electrical Design" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">AutoCAD Electrical Design</h5>
+                            <p class="text-muted mb-4 small">Create professional electrical drawings and schematics.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/i47q704197" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 7 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="store-card d-flex flex-column h-100 bg-white shadow-sm rounded overflow-hidden border">
+                    <div class="position-relative style-image-container" style="aspect-ratio: 4/3; overflow: hidden; background-color: #f8f9fa;">
+                        <span class="store-badge position-absolute top-0 start-0 bg-primary text-white m-3 px-2.5 py-1 rounded small fw-bold" style="z-index: 2;">Courses</span>
+                        <img src="img/networking.png" class="store-image w-100 h-100" alt="Starlink Communications Network Setup" style="object-fit: cover;">
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="fw-bold mb-2">Starlink Communications Network Setup</h5>
+                            <p class="text-muted mb-4 small">Practical setup and networking for Starlink communication systems.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                            <span class="price-tag text-success fw-bold small">Available</span>
+                            <a href="https://selar.com/rvejxa8ru3" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">Buy on Selar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Courses End -->
+
+
+   
+   
+   
+
+
+     <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Column 1: Contact Details -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Our Head Office</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Calabar, Nigeria</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 806 050 5816</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>electcomautomation@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/1EYDWmZHzh/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/electcomautomation?igsh=MTg4YjlzaGtjMzdqNQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <!-- Column 2: Exact Core Services -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Our Services</h4>
+                <a class="btn btn-link" href="">Electrical Installation</a>
+                <a class="btn btn-link" href="">Solar Setup &amp; Maintenance</a>
+                <a class="btn btn-link" href="">Smart Home &amp; Automation</a>
+                <a class="btn btn-link" href="">CCTV Installation</a>
+                <a class="btn btn-link" href="">General Contractor Work</a>
+            </div>
+            
+            <!-- Column 3: Quick Navigation Links -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Our Firm</a>
+                <a class="btn btn-link" href="">Contact Engineering</a>
+                <a class="btn btn-link" href="">Project Portfolio</a>
+                <a class="btn btn-link" href="">Terms &amp; Conditions</a>
+                <a class="btn btn-link" href="">Technical Support</a>
+            </div>
+            
+            <!-- Column 4: Newsletter -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Newsletter</h4>
+                <p>Subscribe to receive technical engineering tips, solar updates, and security insights.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Copyright & Credits Footer Area -->
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                   &copy; <script>document.write(new Date().getFullYear());</script> <a class="border-bottom" href="#">Electcom</a>, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://fixlabtech.com">KORLINK TECH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Link to your separate JavaScript asset file -->
+    <script src="js/contact-form.js"></script>
+</body>
+
+</html>
